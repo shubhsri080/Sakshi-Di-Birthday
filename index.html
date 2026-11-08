@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Sakshi Di! &#10024;</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <audio id="birthdayMusic" loop preload="none">
+    <source src="assets/music/song.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="Play background music" aria-pressed="false" aria-controls="birthdayMusic" title="Music starts after your first click">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 18V5l12-2v13M9 18c0 1.66-1.57 3-3.5 3S2 19.66 2 18s1.57-3 3.5-3S9 16.34 9 18Zm12-2c0 1.66-1.57 3-3.5 3S14 17.66 14 16s1.57-3 3.5-3 3.5 1.34 3.5 3Z"/></svg>
+  </button>
+
+  <div id="leaves-container" aria-hidden="true"></div>
+  <div id="bokeh-container" aria-hidden="true"></div>
+
+  <main id="birthdayExperience">
+  <section class="page active" id="page1" aria-hidden="false" aria-labelledby="page1-heading">
+    <div class="content">
+      <div class="intro-layout">
+        <div class="intro-copy">
+          <p class="eyebrow">A little surprise awaits...</p>
+          <h1 id="page1-heading" tabindex="-1">Happy Birthday,<br><span>Sakshi Di</span></h1>
+          <p class="subtitle">Today, the world feels a little more magical.</p>
+          <button class="main-button" id="startButton" type="button">
+            Ready for a Surprise? <span>&#10024;</span>
+          </button>
+        </div>
+        <figure class="hero-photo photo-placeholder">
+          <img src="assets/music/images/cover.jpg" alt="Sakshi Di smiling" fetchpriority="high" decoding="async">
+          <figcaption>My favourite person</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page2" aria-hidden="true" aria-labelledby="page2-heading" inert>
+    <div class="content">
+      <p class="eyebrow">A journey through memories</p>
+      <h2 id="page2-heading" tabindex="-1">Some moments are <span>forever.</span></h2>
+      <p class="section-intro">A few little memories that will always mean a lot.</p>
+      <div class="memory-grid">
+        <article class="memory-card">
+          <div class="memory-icon">&#10022;</div>
+          <h3>The Little Teacher</h3>
+          <p>Those square-root lessons, your endless patience, and that unforgettable fourth explanation. Some lessons become memories forever.</p>
+        </article>
+        <article class="memory-card">
+          <div class="memory-icon">&#9749;</div>
+          <h3>Cold Coffee Days</h3>
+          <p>All it took was one little craving, and somehow a glass of cold coffee made an ordinary day feel special.</p>
+        </article>
+        <article class="memory-card">
+          <div class="memory-icon">&#9825;</div>
+          <h3>Sakshiya</h3>
+          <p>A name from childhood, filled with little moments, laughter and memories that will always stay close.</p>
+        </article>
+      </div>
+      <button class="main-button next-button" data-next="page3" type="button">
+        Continue the Journey <span>&#8594;</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="page" id="page3" aria-hidden="true" aria-labelledby="page3-heading" inert>
+    <div class="content">
+      <p class="eyebrow">A little garden of memories</p>
+      <h2 id="page3-heading" tabindex="-1">Moments worth <span>keeping.</span></h2>
+      <p class="section-intro">Some photographs capture more than just a moment.</p>
+      <div class="photo-grid">
+        <figure class="photo-placeholder"><img src="assets/music/images/memory-1.jpg" alt="Sakshi Di standing beside a carved stone elephant in a garden" loading="lazy" decoding="async"><figcaption>Beautiful Memories</figcaption></figure>
+        <figure class="photo-placeholder"><img src="assets/music/images/memory-2.jpg" alt="Sakshi Di in a colorful traditional outfit" loading="lazy" decoding="async"><figcaption>Little Adventures</figcaption></figure>
+        <figure class="photo-placeholder"><img src="assets/music/images/memory-3.jpg" alt="Sakshi Di smiling at a restaurant table" loading="lazy" decoding="async"><figcaption>Forever Moments</figcaption></figure>
+      </div>
+      <p class="garden-note">Every little memory has a special place in my heart.</p>
+      <button class="main-button next-button" data-next="page4" type="button">
+        One Last Surprise <span>&#10022;</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="page" id="page4" aria-hidden="true" aria-labelledby="page4-heading" inert>
+    <div class="content final-content">
+      <p class="eyebrow">And finally...</p>
+      <h1 id="page4-heading" tabindex="-1">Keep Shining,<br><span>Sakshi Di.</span></h1>
+      <p class="final-message">
+        May your days always be filled with happiness, your dreams find their way to reality, and your life remain as beautiful as the memories you create.<br><br>
+        You deserve all the wonderful things this world has to offer.
+      </p>
+      <p class="heartfelt-note">Sakshi Di, from patiently teaching me square roots to sharing those little cold coffee moments, you’ve made so many ordinary days unforgettable. I’m so lucky to have you as my sister.<br><br>You can always count on me—whenever you need a hand, a hug, or someone to listen. I’ll always be right by your side, today and every day.<br><br>No matter where life takes us, I’ll always be cheering for you and loving you endlessly. Happy Birthday, Didi! &#10084;</p>
+      <button class="main-button" id="lightsButton" type="button">Release the Magic &#10024;</button>
+      <p class="signature">With lots of love &#10084;&#65039;</p>
+      <button class="replay-button" id="replayButton" type="button">&#8635; Experience Again</button>
+    </div>
+  </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
